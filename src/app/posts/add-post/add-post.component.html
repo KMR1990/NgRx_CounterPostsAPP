@@ -1,0 +1,20 @@
+<div>
+
+    <h2>Add Post</h2>
+    <hr/>
+    <form [formGroup]="postForm" (ngSubmit)="onAddPost()">
+        <div>
+            <label>Title</label>
+            <input type="text" class="form-control" formControlName="title"/>
+        </div>
+        <div>
+            <label>Description</label>
+            <textarea type="text" class="form-control" formControlName="description"></textarea>
+        </div>
+        <br/>
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+</div>

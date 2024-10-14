@@ -1,0 +1,16 @@
+<!-- <p>counter works here {{counter}}</p> -->
+
+<div>
+    <h1>Counter is : {{ (counter$ | async)?.counter }}</h1>
+</div>
+
+<div>
+    <button class="btn btn-primary" (click)="onIncrement()">Increment</button>&nbsp;
+    <button class="btn btn-warning" (click)="onDecrement()">Decrement</button>&nbsp;
+    <button class="btn btn-info" (click)="onReset()">Reset</button>
+</div>
+<br/>
+
+<div>
+    <app-custom-counter></app-custom-counter>
+</div>
